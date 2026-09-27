@@ -18,7 +18,7 @@ let computerScore = 0;
 let humanScore = 0;
 
 function playRound(humanChoice, computerChoice) {
-    const choice = humanChoice.toLowerCase();
+    const choice = humanChoice.toLowerCase() + computerChoice.toLowerCase();
     let result;
     if (choice === computerChoice) {
         result = "It's a tie!";
@@ -37,3 +37,4 @@ function playRound(humanChoice, computerChoice) {
     console.log(`Human Score: ${humanScore}, Computer Score: ${computerScore}`);
     return result;
 }
+
